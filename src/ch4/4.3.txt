@@ -1,0 +1,5 @@
+# let hyojun_taiju shintyo = shintyo ** 2. *. 22. ;;
+val hyojun_taiju : float -> float = <fun>
+
+# hyojun_taiju 1.68 ;;
+- : float = 62.0927999999999898
