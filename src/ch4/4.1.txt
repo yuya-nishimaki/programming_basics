@@ -1,0 +1,11 @@
+# let start_jikyu = 850 ;;
+val start_jikyu : int = 850
+
+# let up_rate_year = 100 ;;
+val up_rate_year : int = 100
+
+# let baito_kyuyo year hour  = (start_jikyu + up_rate_year * year) * hour ;;
+val baito_kyuyo : int -> int -> int = <fun>
+
+# baito_kyuyo 2 10 ;;
+- : int = 10500
