@@ -1,0 +1,5 @@
+# let jikoshokai name = "私の名前は" ^ name ^ "です。" ;;
+val jikoshokai : string -> string = <fun>
+
+# jikoshokai "佑哉" ;;
+- : string = "私の名前は佑哉です。"
