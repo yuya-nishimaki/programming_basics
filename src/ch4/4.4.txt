@@ -1,0 +1,5 @@
+# let bmi shintyo taiju = taiju /. (shintyo ** 2.) ;;
+val bmi : float -> float -> float = <fun>
+
+# bmi 1.68 58. ;;
+- : float = 20.5498866213151956
