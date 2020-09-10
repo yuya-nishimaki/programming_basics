@@ -43,7 +43,6 @@ let rec gakusei_sort gakuseis = match gakuseis with
     [] -> []
     | first :: rest -> gakusei_insert (gakusei_sort rest) first
 
-
 (* テスト *)
 let test1 = gakusei_sort gakuseis1 = []
 let test2 = gakusei_sort gakuseis2 = [gakusei1]

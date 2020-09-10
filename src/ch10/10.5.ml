@@ -23,7 +23,7 @@ let gakuseis3 = [gakusei1; gakusei2]
 let gakuseis4 = [gakusei3; gakusei1; gakusei2]
 
 (* 目的：gakusei_t 型のデータ gakusei1 と gakusei2 を受け取って、
-        gakusei1 の tesuu が gakusei2 より高ければ true、低ければ false を返す *)
+        gakusei1 の tensuu が gakusei2 より高ければ true、低ければ false を返す *)
 (* is_greater : gakusei_t -> gakusei_t -> bool *)
 let is_greater gakusei1 gakusei2 = match gakusei1 with {namae = n1; tensuu = t1; seiseki = s1}
     -> match gakusei2 with {namae = n2; tensuu = t2; seiseki = s2}
