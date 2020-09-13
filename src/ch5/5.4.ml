@@ -1,5 +1,5 @@
 (* 目的：二次方程式の係数 a, b, c の値に応じた、判別式の結果を返す *)
-(* hanbetsushiki: float -> float -> float -> float *)
+(* hanbetsushiki : float -> float -> float -> float *)
 let hanbetsushiki a b c = b ** 2. -. 4. *. a *. c
 
 (* テスト *)

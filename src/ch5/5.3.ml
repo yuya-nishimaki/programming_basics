@@ -13,7 +13,7 @@ let nov_last_day = 30
 let dec_last_day = 31
 
 (* 目的：受け取った誕生日（月 month と日 day）に応じて、星座を返す *)
-(* seiza: int -> int -> string *)
+(* seiza : int -> int -> string *)
 let seiza month day = 
     if (month = 1 && day >= 20 && day <= jan_last_day) 
         || (month = 2 && day >= 1 && day <= 18) then "みずがめ座"

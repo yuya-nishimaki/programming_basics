@@ -1,7 +1,7 @@
-(* 目的：受け取った時間 x に応じて、午前か午後を返す *)
-(* jikan: int -> string *)
-let jikan x = 
-    if x mod 24 < 12 then "午前"
+(* 目的：受け取った時間 time_hour に応じて、午前か午後を返す *)
+(* jikan : int -> string *)
+let jikan time_hour = 
+    if time_hour mod 24 < 12 then "午前"
     else "午後"
 
 (* テスト *)
