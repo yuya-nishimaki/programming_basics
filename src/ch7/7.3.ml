@@ -1,5 +1,5 @@
 (* 目的：平面座標を受け取って、x 軸について対称な点の座標を返す *)
-(* taisho_x: float * float -> float * flaot *)
+(* taisho_x : float * float -> float * flaot *)
 let taisho_x point = match point with (x, y) -> (x, -.y)
 
 (* テスト *)

@@ -1,5 +1,5 @@
 (* 目的：名前と成績の組から、「○○さんの評価は△です」という文字列を返す *)
-(* seiseki: string * string -> string *)
+(* seiseki : string * string -> string *)
 let seiseki pair = match pair with
     (name, score) -> name ^ "さんの評価は" ^ score ^ "です"
 
