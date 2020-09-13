@@ -1,4 +1,4 @@
-# let bmi shintyo taiju = taiju /. (shintyo ** 2.) ;;
+# let bmi shintyo_m taiju_kg = taiju_kg /. (shintyo_m ** 2.) ;;
 val bmi : float -> float -> float = <fun>
 
 # bmi 1.68 58. ;;
