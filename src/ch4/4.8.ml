@@ -5,7 +5,7 @@ let tsuru_ashi = 2
 let kame_ashi = 4
 
 (* 目的：鶴と亀の数の合計 x と足の合計本数 y に応じて、鶴の数を計算する *)
-(* int -> int -> int *)
+(* tsurukame : int -> int -> int *)
 let tsurukame x y = (kame_ashi * x - y) / tsuru_ashi
 
 (* テスト *)
