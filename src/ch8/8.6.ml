@@ -7,7 +7,7 @@ type ekimei_t = {
 }
 
 (* 目的：ekimei_t 型のデータを受け取って、「路線名、駅名（かな）」の形式の文字列を返す *)
-(* hyoji: ekimei_t -> string *)
+(* hyoji : ekimei_t -> string *)
 let hyoji ekimei = match ekimei with
     {kanji = k1; kana = k2; romaji = r; shozoku = s} -> 
         s ^ "，" ^ k1 ^  "（" ^ k2 ^ "）"
