@@ -22,9 +22,9 @@ let person3 = {name = "秀介"; height_m = 1.76; weight_kg = 65.; birthday = (10
 (* count_ketsueki_A : person_t list -> int *)
 let rec count_ketsueki_A persons = match persons with
     [] -> 0
-    | {name = n; height_m = h; weight_kg = w; birthday = (month, day); blood_type = bt} :: rest
-        -> if bt = "A" then 1 + count_ketsueki_A rest 
-                        else count_ketsueki_A rest 
+    | {name = n; height_m = h; weight_kg = w; birthday = (month, day); blood_type = bt} :: rest ->
+        if bt = "A" then 1 + count_ketsueki_A rest
+        else count_ketsueki_A rest
 
 (* テスト *)
 let test1 = count_ketsueki_A [] = 0

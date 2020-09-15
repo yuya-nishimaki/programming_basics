@@ -26,12 +26,12 @@ let persons3 = [person1; person2; person3]
 (* 目的：名前昇順に整列した person_t 型のリスト persons と person_t 型のデータ person を受け取って、
         persons が名前昇順となる位置に person を挿入したリストを返す *)
 (* person_insert : person_t list -> person_t -> person_t list *)
-let rec person_insert persons person = match persons with 
+let rec person_insert persons person = match persons with
     [] -> [person]
-    | ({name = n1; height_m = h1; weight_kg = w1; birthday = (month1, day1); blood_type = bt1} as first) :: rest 
+    | ({name = n1; height_m = h1; weight_kg = w1; birthday = (month1, day1); blood_type = bt1} as first) :: rest
         -> match person with {name = n2; height_m = h2; weight_kg = w2; birthday = (month2, day2); blood_type = bt2}
             -> if n2 < n1 then person :: persons
-                            else first :: person_insert rest person  
+                            else first :: person_insert rest person
 
 (* テスト *)
 let test1 = person_insert [] person1  = [person1]
@@ -45,6 +45,6 @@ let rec person_sort persons = match persons with
     | first :: rest -> person_insert (person_sort rest) first
 
 (* テスト *)
-let test1 = person_sort persons1 = [] 
+let test1 = person_sort persons1 = []
 let test2 = person_sort persons2 = [person1]
 let test3 = person_sort persons3 = [person2; person3; person1]
