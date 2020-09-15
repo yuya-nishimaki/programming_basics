@@ -24,9 +24,9 @@ let rec count_ketsueki_A persons = match persons with
     [] -> 0
     | {name = n; height_m = h; weight_kg = w; birthday = (month, day); blood_type = bt} :: rest
         -> if bt = "A" then 1 + count_ketsueki_A rest 
-                        else 0
+                        else count_ketsueki_A rest 
 
 (* テスト *)
 let test1 = count_ketsueki_A [] = 0
 let test2 = count_ketsueki_A [person1; person2; person3] = 1
-let test3 = count_ketsueki_A [person1; person1; person3] = 2
+let test3 = count_ketsueki_A [person3; person1; person1] = 2
