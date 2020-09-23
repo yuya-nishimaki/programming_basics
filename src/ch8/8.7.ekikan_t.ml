@@ -4,5 +4,5 @@ type ekikan_t = {
     shuten : string; (* 終点の駅名 *)
     keiyu : string; (* 経由する路線名 *)
     kyori_km : float; (* 2 駅間の距離（km） *)
-    jikan _min : int; (* 所要時間（分） *)
+    jikan_min : int; (* 所要時間（分） *)
 }

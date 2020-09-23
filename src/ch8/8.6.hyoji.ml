@@ -1,15 +1,9 @@
-(* 駅名の情報（漢字の駅名、ひらがなの駅名、ローマ字の駅名、所属する路線名）を表す型 *)
-type ekimei_t = {
-    kanji : string; (* 漢字の駅名 *)
-    kana : string; (* ひらがなの駅名 *)
-    romaji : string; (* ローマ字の駅名 *)
-    shozoku : string; (* 所属する路線名 *)
-}
+#use "ch8/8.5.ekimei_t.ml"
 
 (* 目的：ekimei_t 型のデータを受け取って、「路線名、駅名（かな）」の形式の文字列を返す *)
 (* hyoji : ekimei_t -> string *)
 let hyoji ekimei = match ekimei with
-    {kanji = k1; kana = k2; romaji = r; shozoku = s} -> 
+    {kanji = k1; kana = k2; romaji = r; shozoku = s} ->
         s ^ "，" ^ k1 ^  "（" ^ k2 ^ "）"
 
 (* ekimei_t 型のデータ例 *)

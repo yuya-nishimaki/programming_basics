@@ -7,7 +7,7 @@ type gakusei_t = {
 
 (* gakusei_t 型のデータ例 *)
 let gakusei1 = {namae = "asai"; tensuu = 70; seiseki = "B"}
-let gakusei2 = {namae = "kaneko"; tensuu = 85; seiseki = "A"} 
+let gakusei2 = {namae = "kaneko"; tensuu = 85; seiseki = "A"}
 let gakusei3 = {namae = "yoshida"; tensuu = 80; seiseki = "A"}
 
 (* gakusei_t list は

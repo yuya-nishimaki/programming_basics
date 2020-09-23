@@ -1,4 +1,4 @@
-# use "./metro.ml"
+(* # use "./metro.ml" *)
 
 (* ekikan_t list は
     - []            空リスト、あるいは
@@ -8,11 +8,11 @@
 
 (* 目的：漢字の駅名をふたつと駅間リストを受け取って、駅間リストの中からその 2 駅間の距離を返す *)
 (* get_ekikan_kyori : string -> string -> ekikan_t list -> float *)
-let rec get_ekikan_kyori kanji_ekimei1 kanji_ekimei2 ekikan_list = 
-    match ekikan_list with 
+let rec get_ekikan_kyori kanji_ekimei1 kanji_ekimei2 ekikan_list =
+    match ekikan_list with
         [] -> infinity
-        | {kiten = k1; shuten = s; keiyu = k2; kyori = k3; jikan = j} :: rest 
-            -> if (kanji_ekimei1 = k1 && kanji_ekimei2 = s) 
+        | {kiten = k1; shuten = s; keiyu = k2; kyori = k3; jikan = j} :: rest
+            -> if (kanji_ekimei1 = k1 && kanji_ekimei2 = s)
                 || (kanji_ekimei1 = s && kanji_ekimei2 = k1) then k3
                 else get_ekikan_kyori kanji_ekimei1 kanji_ekimei2 rest
 

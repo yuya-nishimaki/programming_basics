@@ -7,7 +7,7 @@ type gakusei_t = {
 
 (* gakusei_t 型のデータ例 *)
 let gakusei1 = {namae = "asai"; tensuu = 70; seiseki = "B"}
-let gakusei2 = {namae = "kaneko"; tensuu = 85; seiseki = "A"} 
+let gakusei2 = {namae = "kaneko"; tensuu = 85; seiseki = "A"}
 let gakusei3 = {namae = "yoshida"; tensuu = 80; seiseki = "A"}
 
 (* gakusei_t list は
@@ -25,12 +25,12 @@ let gakuseis4 = [gakusei3; gakusei1; gakusei2]
 (* 目的：tensuu 降順に整列した gakusei_t 型のリスト gakuseis と gakusei_t 型のデータ gakusei を受け取って、
         gakuseis が tensuu 降順となる位置に gakusei を挿入したリストを返す *)
 (* gakusei_insert : gakusei_t list -> gakusei_t -> gakusei_t list *)
-let rec gakusei_insert gakuseis gakusei = match gakuseis with 
+let rec gakusei_insert gakuseis gakusei = match gakuseis with
     [] -> [gakusei]
-    | ({namae = n1; tensuu = t1; seiseki = s1} as first) :: rest 
+    | ({namae = n1; tensuu = t1; seiseki = s1} as first) :: rest
         -> match gakusei with {namae = n2; tensuu = t2; seiseki = s2}
             -> if t2 > t1 then gakusei :: gakuseis
-                            else first :: gakusei_insert rest gakusei  
+                            else first :: gakusei_insert rest gakusei
 
 (* テスト *)
 let test1 = gakusei_insert [] gakusei1  = [gakusei1]
