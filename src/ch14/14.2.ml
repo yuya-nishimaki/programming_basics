@@ -32,7 +32,7 @@ let is_seiseki_A gakusei = match gakusei with {namae = n; tensuu = t; seiseki = 
 let count_A gakuseis = List.length (List.filter is_seiseki_A gakuseis)
 
 (* テスト *)
-let test3 = count_A gakuseis1 = 0
-let test4 = count_A gakuseis2 = 0
-let test5 = count_A gakuseis3 = 1
-let test6 = count_A gakuseis4 = 2
+let test1 = count_A gakuseis1 = 0
+let test2 = count_A gakuseis2 = 0
+let test3 = count_A gakuseis3 = 1
+let test4 = count_A gakuseis4 = 2
